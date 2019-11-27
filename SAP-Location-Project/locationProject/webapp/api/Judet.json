@@ -1,0 +1,24 @@
+{
+    "Judet": [
+        {
+            "id": "BV",
+            "nume": "Brasov"
+        },
+        {
+            "id": "2",
+            "nume": "Bucuresti"
+        },
+        {
+            "id": "3",
+            "nume": "Bacau"
+        },
+        {
+            "id": "4",
+            "nume": "Suceava"
+        },
+        {
+            "id": "5",
+            "nume": "Oradea"
+        }
+    ]
+}

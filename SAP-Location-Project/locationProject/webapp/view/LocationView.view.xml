@@ -1,0 +1,74 @@
+<mvc:View controllerName="com.cerner.IacobXenia.locationProject.locationProject.controller.LocationView" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.f" xmlns:m="sap.m" xmlns:card="sap.f.cards">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<customHeader>
+						<Bar>
+							<contentLeft>
+								<Image src="https://icon-library.net/images/location-icon-logo/location-icon-logo-18.jpg" height="1.25rem" />
+							</contentLeft>
+							<contentMiddle>
+								<Text text="Welocome to RO-PickLocation App" />
+							</contentMiddle>
+							<contentRight>
+								<Text text="{path: 'systemDate>/dtValue',type: 'sap.ui.model.type.DateTime',formatOptions: {style: 'short'}}" />
+							</contentRight>
+						</Bar>
+					</customHeader>
+					<content>
+
+						<VBox class="cardsStyle">
+							<HBox>
+								<VBox>
+									<HBox>
+										<f:Card class="sapUiMediumMargin" width="350px">
+											<f:header>
+												<card:Header title="Pick a RO-location" iconSrc="sap-icon://map-2" />
+											</f:header>
+											<f:content>
+												<VBox height="115px" class="sapUiSmallMargin" justifyContent="SpaceBetween">
+													<HBox justifyContent="SpaceBetween">
+														<Text class="textSizingCard1" text="Pick a Region: " />
+														<Select class="selectStyle" id="regionSelect" items="{path: 'region>/'}" change="onSelectedRegion">
+															<core:Item key="{region>auto}" text="{region>nume}" />
+														</Select>
+													</HBox>
+													<HBox>
+														<Text class="textSizingCard1" text="Pick a City: " />
+														<Select class="selectStyle" id="citySelect" selectedKey="{city>nume}" items="{path: 'city>/'}" change="onSelectedCity">
+															<core:Item text="{city>nume}" />
+														</Select>
+													</HBox>
+
+												</VBox>
+											</f:content>
+										</f:Card>
+										<f:Card class="sapUiMediumMargin" width="350px">
+											<f:header>
+												<card:Header title="Selected RO-location" iconSrc="sap-icon://functional-location" />
+											</f:header>
+											<f:content>
+												<VBox height="115px" class="sapUiSmallMargin">
+													<HBox>
+														<Text class="textSizingCard2" text="Selected Region: " />
+														<Text class=" golbalMarginCard2" text=" {path: 'location>/regionName'}" />
+													</HBox>
+													<HBox>
+														<Text class="textSizingCard2" text="Selected City: " />
+														<Text class="golbalMarginCard2" text=" {path: 'location>/cityName'}" />
+													</HBox>
+
+												</VBox>
+											</f:content>
+										</f:Card>
+									</HBox>
+								</VBox>
+							</HBox>
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

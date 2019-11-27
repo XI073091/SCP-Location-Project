@@ -1,0 +1,14 @@
+{
+  "welcomeFile": "/locationProject/index.html",
+  "authenticationMethod": "route",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+      "source": "^/locationProject/(.*)$",
+      "target": "$1",
+      "localDir": "webapp"
+    }
+  ]
+}

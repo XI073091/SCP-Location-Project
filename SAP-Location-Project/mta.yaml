@@ -1,0 +1,24 @@
+ID: SAP-Location-Project
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: locationProject
+   type: html5
+   path: locationProject
+   parameters:
+      disk-quota: 256M
+      memory: 256M
+   build-parameters:
+      builder: npm
+   requires:
+    - name: uaa_SAP-Location-Project
+
+resources:
+ - name: uaa_SAP-Location-Project
+   parameters:
+      path: ./xs-security.json
+      service-plan: application
+      service: xsuaa
+   type: org.cloudfoundry.managed-service
+

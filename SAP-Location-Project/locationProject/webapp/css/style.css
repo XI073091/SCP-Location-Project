@@ -1,0 +1,24 @@
+/* Enter your custom styles here */
+.golbalMarginCard2{
+    width: 10rem !important;
+    font-size: 1.15rem;
+    margin: 0.5rem 0rem 0rem 0.25rem;
+}
+.textSizingCard1 {
+    width: 8rem !important;
+    font-size: 1.15rem;
+	 margin: 0.5rem 0rem 2rem 0rem;
+}
+.textSizingCard2 {
+    width: 9rem !important;
+    font-size: 1.15rem;
+	 margin: 0.5rem 0rem 2rem 0rem;
+}
+.selectStyle{
+    width: 11rem !important;
+    margin: 0rem 6rem 2rem 0rem;
+}
+.cardsStyle{
+    margin: 10% 20%;
+}
+
