@@ -7,7 +7,7 @@
     "@sap/ui5-builder-webide-extension": "1.0.4"
   },
   "dependencies": {
-    "@sap/approuter": "6.5.0"
+    "@sap/approuter": "16.7.2"
   },
   "scripts": {
     "start": "node node_modules/@sap/approuter/approuter.js",
